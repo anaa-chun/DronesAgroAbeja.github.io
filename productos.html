@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empresa e Inicitiva Emprendedora</title>
+  </head>
+
+  <style>
+    /*Encabezado header*/
+    header {
+      color: white;
+      background-color: green;
+      padding: 33px 11px;
+      text-align: center;
+    }
+    
+    h2 {
+      color: #4caf50;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 55px;
+    }
+    nav ul li a {
+      color: white;
+
+      text-decoration: none;
+    }
+
+    /*Menu hamburguesa Productos y Servicios*/
+    nav ul li {
+      position: relative; /* Para submenús */
+    }
+
+    /* Submenú oculto por defecto */
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      background-color: #006400;
+      padding: 0;
+      list-style: none;
+      margin: 0;
+      top: 100%;
+      left: 0;
+    }
+
+    /* Mostrar submenú al pasar el ratón */
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    /* Para las secciones */
+    section {
+      padding: 30px;
+      margin: 2px;
+      background: rgb(168, 232, 168);
+      border-radius: 1px;
+    }
+
+
+    /*Para footer*/
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      background: #4caf50;
+      color: white;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+
+  <body>
+    <header>
+      <!-- HEADER -->
+      <h1>AgroAbeja</h1>
+      <nav>
+        <!-- NAV -->
+        <ul>
+          <li><a href="paginaPrincipal.html">Inicio</a></li>
+
+          <!-- <li><a href="#ProductosServicios">Productos y Servicios</a></li> -->
+          <li id="ProductosServicios">
+            <a href="#ProductosServicios">Productos y Servicios</a>
+            <ul>
+              <li><a href="productos.html">Productos</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+            </ul>
+          </li>
+          <!-- Productos: que se pueden comprar y utilizar (drones y cargadores)  -->
+          <!--  Servicios: Actividades y soporte que se ofrecen para mejorar la experiencia del cliente y el uso de los productos (mantenimiento, alquiler, instalación). -->
+          <li><a href="#Biografia">Biografía</a></li>
+          <li><a href="#Contactos">Contactos</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+      <section id="Productos">
+        <div>
+            <p>
+                Nuestros productos destacan por su tecnología avanzada, como los drones que utilizan
+                ondas sonoras para controlar plagas sin químicos, y cargadores inalámbricos que aumentan
+                la eficiencia energética en la agricultura
+            </p>
+        </div>
+
+        <h3>Drones AgroAbeja</h3>
+        <p>Modelo básico: Diseñado para pequeñas y medianas explotaciones agrícolas. Es ideal para agricultores 
+            que buscan monitorear cultivos y controlar plagas de manera efectiva. </p>
+
+      </section>
+    </main>
+    <section id="Contactos"><h2>Contactos</h2>
+
+    </section>
+
+    <footer>
+      <p>&copy; 2025 AgroAbeja. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
