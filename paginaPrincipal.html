@@ -1,230 +1,287 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Empresa e Inicitiva Emprendedora</title>
-  </head>
+<html lang="es">
 
-  <style>
-	
-    body{
-      position: relative;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-    }
-	  
-	     /* Responsividad */
-      /* media queries hace que las páginas se adapten a diferentes tamaños de pantalla y dispositivos */
-      @media (max-width: 768px) {
-        header {
-          text-align: center;
-          padding: 20px;
-        }
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Empresa e Inicitiva Emprendedora</title>
+  <link rel="icon" href="https://github.com/user-attachments/assets/5925149b-4ca3-4106-b8cb-81335e4fba9d">
+</head>
 
-        nav ul {
-          flex-direction: column;
-        }
-        nav ul li {
-          margin: 10px 0;
-        }
-   
-        #columnas {
-          flex-direction: column; /* Cambia a columnas verticales */
-        }
-      }
+<style>
+  body {
+    position: relative;
+    background-color: #0d2c0d;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* ------------------------------------------------------------------------------------------ */
 
-      @media (max-width: 480px) {
-        header {
-          padding: 15px;
-        }
-
-        h1 {
-          font-size: 1.5rem; /* Tamaño del texto reducido */
-        }
-
-        section {
-          padding: 15px;
-        }
-
-        #c1,
-        #c2 {
-          padding: 15px;
-        }
-      }
-	  
-    /*Encabezado header*/
+  /* Responsividad */
+  /* media queries hace que las páginas se adapten a diferentes tamaños de pantalla y dispositivos */
+  @media (max-width: 768px) {
     header {
-      color: white;
-      background-color: green;
-      padding: 33px 11px;
       text-align: center;
+      padding: 50px;
     }
-    
-    h2 {
-      color: #4caf50;
+
+    nav ul {
+      flex-direction: column;
     }
-    
-   nav ul {
-      padding: 0;
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-      
+
     nav ul li {
-      margin: 0 55px;
-      position: relative;
-    }
-    
-    nav ul li a {
-      color: white;
-
-      text-decoration: none;
+      margin: 10px 0;
     }
 
-    /*Menu hamburguesa Productos y Servicios*/
-    nav ul li {
-      position: relative; /* Para submenús */
-    }
-
-    /* Submenú oculto por defecto */
-    nav ul li ul {
-      display: none;
-      position: absolute;
-      background-color: #006400;
-      padding: 0;
-      list-style: none;
-      margin: 0;
-      top: 100%;
-      left: 0;
-    }
-
-    /* Mostrar submenú al pasar el ratón */
-    nav ul li:hover ul {
-      display: block;
-    }
-
-    /* Para las secciones */
-    section {
-      padding: 30px;
-      margin: 2px;
-      background: rgb(168, 232, 168);
-      border-radius: 1px;
-    }
-
-    /* Productos y servicios en dos columnas */
     #columnas {
-      display: flex;
-      gap: 22px;
+      flex-direction: column;
+      /* Cambia a columnas verticales */
+    }
+  }
+
+  /* Pantallas grandes en general*/
+  @media (max-width: 180px) {
+    header {
+      padding: 15px;
+    }
+
+    
+    h1 {
+      font-size: 1.5rem;
+      /* Tamaño del texto reducido */
+    }
+
+    section {
+      padding: 15px;
     }
 
     #c1,
     #c2 {
-      padding: 22px;
-      background-color: aliceblue;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 15px;
     }
+  }
 
-    /*Para footer*/
-    footer {
-      text-align: center;
-      padding: 10px 0;
-      background: #4caf50;
-      color: white;
-      position: relative;
-      bottom: 0;
-      width: 100%;
+  /* Media query para dispositivos con pantallas pequeñas */
+  @media (min-width: 1200px) {
+    header {
+      font-size: 11px;
     }
-  </style>
+  }
 
-  <body>
-    <header>
-      <!-- HEADER -->
-      <h1>AgroAbeja</h1>
-      <nav>
-        <!-- NAV -->
-        <ul>
-          <li><a href="#Inicio">Inicio</a></li>
-          <!-- Introducción Breve: Un párrafo que explique qué es AgroAbeja y su enfoque en la tecnología agrícola.
-          Imagen o Video: Una imagen atractiva o un video corto que represente la empresa o sus productos.  (para el vídeo corporativo)-->
+  /* ------------------------------------------------------------------------------------------ */
 
-          <!-- <li><a href="#ProductosServicios">Productos y Servicios</a></li> -->
-          <li id="ProductosServicios">
-            <a href="#ProductosServicios">Productos y Servicios</a>
-            <ul>
-              <li><a href="productos.html">Productos</a></li>
-              <li><a href="servicios.html">Servicios</a></li>
-            </ul>
-          </li>
-          <!-- Productos: que se pueden comprar y utilizar (drones y cargadores)  -->
-          <!--  Servicios: Actividades y soporte que se ofrecen para mejorar la experiencia del cliente y el uso de los productos (mantenimiento, alquiler, instalación). -->
-          <li><a href="#Biografia">Biografía</a></li>
-          <!-- Breve relato sobre cómo y por qué se fundó AgroAbeja, valores y el equipo de la empresa (quienes son y qué representan) -->
-          <li><a href="#Contactos">Contactos</a></li>
-          <!-- RRSS, correo electrónico, etc -->
-        </ul>
-      </nav>
-    </header>
+  /*Encabezado header + pie de página*/
+  header,
+  footer {
+    color: white;
+    background-color: green;
+    text-align: center;
+    padding: 30px 11px;
+    width: 100%;
+    height: 100%;
+  }
 
-    <!-- MAIN -->
-    <main>
-      <section id="Inicio">
-        <h2>AgroAbeja</h2>
-        <p>
+  /*Nombre del negocio: AgroAbeja */
+  h1{
+    font-size:2.5rem;
+  }
+
+  /* Para súbtitulos (sobre nosotros, productos y servicios), biografia, contactos*/
+  h2 {
+    color: #4caf50;
+    text-align: center;
+  }
+
+  nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    margin: 0 50px;
+    position: relative;
+  }
+
+  /* Menú de navegación: Inicio, Productos y Servicios, Biografía, Contactos */
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  /*Menu hamburguesa Productos y Servicios*/
+  nav ul li {
+    position: relative;
+    /* Para submenús */
+  }
+
+  /* Submenú oculto por defecto */
+  nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #006400;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    top: 100%;
+    left: 0;
+  }
+
+  /* Mostrar submenú al pasar el ratón */
+  nav ul li:hover ul {
+    display: block;
+  }
+
+  /* Secciones paneles verdes claros*/
+  section {
+    padding: 33px 10px;
+    margin: 10px 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(168, 232, 168);
+    border-radius: 1px;
+    box-shadow: white;
+  }
+
+  /* Productos y servicios en dos columnas */
+  #columnas {
+    display: flex;
+    gap: 22px;
+  }
+
+  /* Paneles blancos de productos y otro de servicios */
+  #c1,
+  #c2 {
+    padding: 22px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  }
+
+/* AgroAbeja video corporativo + textos en el lado izquierdo */
+/* Solo Vídeo corporativo para tener margen en el lado izquierdo*/
+iframe.logoAgroAbeja {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+iframe {
+  display: inline-block;
+  margin-left: 22px;
+}
+</style>
+
+<body>
+  <header>
+    <!-- HEADER -->
+    <h1> AgroAbeja</h1>
+    <a href="paginaPrincipal.html"><img src="https://github.com/user-attachments/assets/5925149b-4ca3-4106-b8cb-81335e4fba9d" alt="logoAgroAbeja" width="82px" height="82px"></a>
+    <nav>
+      <!-- NAV -->
+      <ul>
+        <li><a href="#SobreNosostros">Sobre Nosostros</a></li>
+        <!-- Introducción Breve: Un párrafo que explique qué es AgroAbeja y su enfoque en la tecnología agrícola.
+          Imagen o Video Corporativo-->
+
+        <!-- <li><a href="#ProductosServicios">Productos y Servicios</a></li> -->
+        <li id="ProductosServicios">
+          <a href="#ProductosServicios">Productos y Servicios</a>
+          <ul>
+            <li id="submenu"><a href="productos.html">Productos</a></li>
+            <li id="submenu"><a href="servicios.html">Servicios</a></li>
+          </ul>
+        </li>
+        <!-- Productos: que se pueden comprar y utilizar (drones y cargadores)  -->
+        <!--  Servicios: Actividades y soporte que se ofrecen para mejorar la experiencia del cliente y el uso de los productos (mantenimiento, alquiler, instalación). -->
+        <li><a href="#Biografia">Biografía</a></li>
+        <!-- Breve relato sobre cómo y por qué se fundó AgroAbeja, valores y el equipo de la empresa (quienes son y qué representan) -->
+        <li><a href="#Contactos">Contactos</a></li>
+        <!-- RRSS, correo electrónico, etc -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <section id="#SobreNosostros"> <!-- SUBTITULO 1 -->
+      <h2 style="clear: both;">Sobre Nosostros</h2>
+      <div style="text-align:start; margin-top: 20px; padding: 0.4px; margin: 1px; background-color: rgb(198, 246, 218);">
+        <br> <br>
+
+        <p ><iframe class="logoAgroAbeja" src="https://github.com/user-attachments/assets/d8448106-5198-41ab-bd67-41048d9cc0a9"></iframe> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolor
+          sit quas qui. Ea voluptatibus nemo labore blanditiis aperiam expedita
+          mollitia voluptates, pariatur vel amet culpa assumenda consequuntur
+          repellendus excepturi?
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem hic
+          quod, quia iure id adipisci magnam quisquam possimus architecto saepe
+          omnis nemo in dolore. Dolorem reprehenderit incidunt minus ut sapiente.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolor
           sit quas qui. Ea voluptatibus nemo labore blanditiis aperiam expedita
           mollitia voluptates, pariatur vel amet culpa assumenda consequuntur
           repellendus excepturi?
-          <div style="text-align: center; margin-top: 20px;">
-            <video src="https://github.com/user-attachments/assets/d8448106-5198-41ab-bd67-41048d9cc0a9"></video>
-            <img src="image.jpg" alt="AgroAbeja" style="max-width: 100%; height: auto; display: inline-block;"/>
-          </div>
-          <!-- se pone aquí el vídeo corporativo -->
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem hic
+          quod, quia iure id adipisci magnam quisquam possimus architecto saepe
+          omnis nemo in dolore. Dolorem reprehenderit incidunt minus ut sapiente.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem hic
+          quod, quia iure id adipisci magnam quisquam possimus architecto saepe
+          omnis nemo in dolore. Dolorem reprehenderit incidunt minus ut sapiente.
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem hic
+          quod, quia iure id adipisci magnam quisquam possimus architecto saepe
+          omnis nemo in dolore. Dolorem reprehenderit incidunt minus ut sapiente.
         </p>
-      </section>
+      </div>
+    </section>
 
-      <section id="ProductosServicios">
-        <h2 style="text-align: center; margin: 11px 0">
-          Productos y Servicios
-        </h2>
-        <div id="columnas">
-          <div id="c1">
-            <h3><a href="productos.html">Productos</a></h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-              dolor sit quas qui. Ea voluptatibus nemo labore blanditiis aperiam
-              expedita mollitia voluptates, pariatur vel amet culpa assumenda
-              consequuntur repellendus excepturi?
-            </p>
-          </div>
-          <div id="c2">
-            <h3><a href="servicios.html">Servicios</a></h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-              dolor sit quas qui. Ea voluptatibus nemo labore blanditiis aperiam
-              expedita mollitia voluptates, pariatur vel amet culpa assumenda
-              consequuntur repellendus excepturi?
-            </p>
-          </div>
+    <section id="ProductosServicios"> <!-- SUBTÍTULO 2 -->
+      <h2>
+        Productos y Servicios
+      </h2>
+      <div id="columnas">
+        <div id="c1">
+          <h3><a href="productos.html">Productos</a></h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            dolor sit quas qui. Ea voluptatibus nemo labore blanditiis aperiam
+            expedita mollitia voluptates, pariatur vel amet culpa assumenda
+            consequuntur repellendus excepturi?
+          </p>
         </div>
-      </section>
+        <div id="c2">
+          <h3><a href="servicios.html">Servicios</a></h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            dolor sit quas qui. Ea voluptatibus nemo labore blanditiis aperiam
+            expedita mollitia voluptates, pariatur vel amet culpa assumenda
+            consequuntur repellendus excepturi?
+          </p>
+        </div>
+      </div>
+    </section>
 
-      <section id="Biografia">
-        <h2>Biografía</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolor
-          sit quas qui. Ea voluptatibus nemo labore blanditiis aperiam expedita
-          mollitia voluptates, pariatur vel amet culpa assumenda consequuntur
-          repellendus excepturi?
-        </p>
-      </section>
-    </main>
-    <section id="Contactos"><h2>Contactos</h2></section>
-   
-    <footer>
-      <p>&copy; 2025 AgroAbeja. Todos los derechos reservados.</p>
-    </footer>
-  </body>
+    <section id="Biografia"> <!-- SUBTÍTULO 3 -->
+      <h2>Biografía</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolor
+        sit quas qui. Ea voluptatibus nemo labore blanditiis aperiam expedita
+        mollitia voluptates, pariatur vel amet culpa assumenda consequuntur
+        repellendus excepturi?
+      </p>
+    </section>
+  </main>
+  <section id="Contactos"> <!-- SUBTÍTULO 4 -->
+    <h2>Contactos</h2>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AgroAbeja. Todos los derechos reservados.</p>
+  </footer>
+</body>
+
 </html>
