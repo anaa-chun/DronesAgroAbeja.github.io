@@ -1,11 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Empresa e Inicitiva Emprendedora</title>
+  <link rel="icon" href="https://github.com/user-attachments/assets/5925149b-4ca3-4106-b8cb-81335e4fba9d">
 </head>
-<body style="background-color: rgb(83, 120, 153);">
-    
+
+<style>
+  /* Como en general, fuentes de letras que afecta a todo, el fondo queda bastante oscuro */
+  body {
+    position: relative;
+    background-color: #0d2c0d;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* ------------------------------------------------------------------------------------------ */
+
+  /* Responsividad */
+  /* media queries hace que las páginas se adapten a diferentes tamaños de pantalla y dispositivos */
+  @media (max-width: 768px) {
+    header {
+      text-align: center;
+      padding: 50px;
+    }
+
+    nav ul {
+      flex-direction: column;
+    }
+
+    nav ul li {
+      margin: 10px 0;
+    }
+
+  }
+
+  /* Pantallas grandes en general*/
+  @media (max-width: 180px) {
+    header {
+      padding: 15px;
+    }
+
+
+    h1 {
+      font-size: 1.5rem;
+      /* Tamaño del texto reducido */
+    }
+
+    section {
+      padding: 15px;
+    }
+
+    #c1,
+    #c2 {
+      padding: 15px;
+    }
+  }
+
+  /* Media query para dispositivos con pantallas pequeñas */
+  @media (min-width: 1200px) {
+    header {
+      font-size: 11px;
+    }
+  }
+
+  /* ------------------------------------------------------------------------------------------ */
+
+  /*Encabezado header + pie de página*/
+  header,
+  footer {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: green;
+    text-align: center;
+    padding: 30px 11px;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+  /*Nombre del negocio: AgroAbeja */
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  /* Para súbtitulos (sobre nosotros, productos y servicios), biografia, contactos*/
+  h2 {
+    color: #4caf50;
+    text-align: center;
+  }
+
+  h2 {
+    color: #4caf50;
+    text-align: center;
+    color: #006400;
+  }
+
+  /* Para que no aparezca los puntos de indice */
+  nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    margin: 0 50px;
+    position: relative;
+  }
+
+  /* Menú de navegación: Inicio, Productos y Servicios, Biografía, Contactos */
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  /*Menu hamburguesa Productos y Servicios*/
+  nav ul li {
+    position: relative;
+    /* Para submenús */
+  }
+
+  /* Submenú oculto por defecto */
+  nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #006400;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    top: 100%;
+    left: 0;
+  }
+
+  /* Mostrar submenú al pasar el ratón */
+  nav ul li:hover ul {
+    display: block;
+  }
+
+  /* Secciones paneles verdes claros*/
+  section {
+    padding: 33px 10px;
+    margin: 10px 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(168, 232, 168);
+    border-radius: 1px;
+    box-shadow: rgb(187, 168, 168);
+  }
+
+  /* Subsecciones */
+  div {
+    text-align: justify;
+    margin-top: 20px;
+    padding: 15px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 5px;
+    border-style: ridge;
+    display: flex;
+  }
+</style>
+
+<!-- Cambio de color al pasar el ratón y luego vuelve al color original -->
+<script>
+
+  window.addEventListener("load", () => {
+    var MenuNavegacion = document.querySelectorAll("nav ul li a");
+
+    MenuNavegacion.forEach(link => {
+      link.addEventListener("mouseover", () => {
+        link.style.color = "yellow";
+      });
+
+      link.addEventListener("mouseout", () => {
+        link.style.color = "";
+      });
+
+    });
+  });
+</script>
+
+
+<body>
+  <header>
+    <!-- HEADER -->
+    <h1> AgroAbeja</h1>
+    <a href="PaginaPrincipal.html"><img
+        src="https://github.com/user-attachments/assets/5925149b-4ca3-4106-b8cb-81335e4fba9d" alt="logoAgroAbeja"
+        width="82px" height="82px"></a>
+    <nav>
+      <!-- NAV -->
+      <ul>
+        <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+        <!-- Introducción Breve: Un párrafo que explique qué es AgroAbeja y su enfoque en la tecnología agrícola.
+        Imagen o Video Corporativo-->
+
+        <li><a href="servicios.html">Servicios</a></li>
+        <!-- <li><a href="#ProductosServicios">Productos y Servicios</a></li> -->
+
+        <!-- Productos: que se pueden comprar y utilizar (drones y cargadores)  -->
+        <!--  Servicios: Actividades y soporte que se ofrecen para mejorar la experiencia del cliente y el uso de los productos (mantenimiento, alquiler, instalación). -->
+        <!-- Breve relato sobre cómo y por qué se fundó AgroAbeja, valores y el equipo de la empresa (quienes son y qué representan) -->
+        <li><a href="contactos.html">Contactos</a></li>
+        <!-- RRSS, correo electrónico, etc -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <section id="biografia">
+      <h2>Biografia</a></h2>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+          dolor sit quas qui. Ea voluptatibus nemo labore blanditiis aperiam
+          expedita mollitia voluptates, pariatur vel amet culpa assumenda
+          consequuntur repellendus excepturi?
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AgroAbeja. Todos los derechos reservados.</p>
+  </footer>
 </body>
+
 </html>
