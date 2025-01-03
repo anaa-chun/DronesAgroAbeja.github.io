@@ -2,8 +2,8 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Empresa e Inicitiva Emprendedora</title>
   <link rel="icon" href="https://github.com/user-attachments/assets/5925149b-4ca3-4106-b8cb-81335e4fba9d">
 </head>
@@ -17,7 +17,7 @@
     max-width: 1200px;
     margin: 0 auto;
   }
-  
+
   /* ------------------------------------------------------------------------------------------ */
 
   /* Responsividad */
@@ -48,7 +48,7 @@
       padding: 15px;
     }
 
-    
+
     h1 {
       font-size: 1.5rem;
       /* Tamaño del texto reducido */
@@ -85,8 +85,8 @@
   }
 
   /*Nombre del negocio: AgroAbeja */
-  h1{
-    font-size:2.5rem;
+  h1 {
+    font-size: 2.5rem;
   }
 
   /* Para súbtitulos (sobre nosotros, productos y servicios), biografia, contactos*/
@@ -165,40 +165,44 @@
 
   }
 
-/* AgroAbeja video corporativo + textos en el lado izquierdo */
-iframe.logoAgroAbeja {
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 30px;
-}
+  /* AgroAbeja video corporativo + textos en el lado izquierdo */
+  iframe.logoAgroAbeja {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
 
-/* Solo Vídeo corporativo para tener margen en el lado izquierdo*/
-iframe {
-  display: inline-block;
-  margin-left: 22px;
-}
+  /* Solo Vídeo corporativo para tener margen en el lado izquierdo*/
+  iframe {
+    display: inline-block;
+    margin-left: 22px;
+  }
 </style>
 
+<!-- Cambio de color al pasar el ratón y se vuelve el color original -->
 <script>
-  var MenuNavegacion = document.querySelectorAll("nav ul li a");
+  window.addEventListener("load", () => {
+    var MenuNavegacion = document.querySelectorAll("nav ul li a");
+    MenuNavegacion.forEach(link => { 
+      link.addEventListener("mouseover", () => { 
+        link.style.color = "yellow"; 
+      });
 
-  MenuNavegacion.forEach(link =>{
-    link.addEventListener("mouseover", ()=> {
-    link.style.color="yellow"})
-
-    link.addEventListener("mouseout", ()=> {
-    link.style.color=""})
-  
+      link.addEventListener("mouseout", ()=>{
+        link.style.color="";
+      });
+    });
   });
-
-
 </script>
+
 
 <body>
   <header>
     <!-- HEADER -->
     <h1> AgroAbeja</h1>
-    <a href="PaginaPrincipal.html"><img src="https://github.com/user-attachments/assets/5925149b-4ca3-4106-b8cb-81335e4fba9d" alt="logoAgroAbeja" width="82px" height="82px"></a>
+    <a href="PaginaPrincipal.html"><img
+        src="https://github.com/user-attachments/assets/5925149b-4ca3-4106-b8cb-81335e4fba9d" alt="logoAgroAbeja"
+        width="82px" height="82px"></a>
     <nav>
       <!-- NAV -->
       <ul>
@@ -228,10 +232,13 @@ iframe {
   <main>
     <section id="SobreNosotros"> <!-- SUBTITULO 1 -->
       <h2 style="clear: both;">Sobre Nosostros</h2>
-      <div style="text-align:start; margin-top: 20px; padding: 0.4px; margin: 1px; background-color: rgb(198, 246, 218);">
+      <div
+        style="text-align:start; margin-top: 20px; padding: 0.4px; margin: 1px; background-color: rgb(198, 246, 218);">
         <br> <br>
 
-        <p ><iframe class="logoAgroAbeja" src="https://github.com/user-attachments/assets/d8448106-5198-41ab-bd67-41048d9cc0a9"></iframe> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolor
+        <p><iframe class="logoAgroAbeja"
+            src="https://github.com/user-attachments/assets/d8448106-5198-41ab-bd67-41048d9cc0a9"></iframe> Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Quam dolor
           sit quas qui. Ea voluptatibus nemo labore blanditiis aperiam expedita
           mollitia voluptates, pariatur vel amet culpa assumenda consequuntur
           repellendus excepturi?
