@@ -95,6 +95,7 @@
     text-align: center;
   }
 
+  /* Para que no aparezca los puntos de indice */
   nav ul {
     padding: 0;
     list-style: none;
@@ -152,18 +153,15 @@
 
   /* Subsecciones */
   div#SubSection {
-    text-align:justify;
+    text-align: justify;
     margin-top: 20px;
-    padding: 0.4px;
+    padding: 15px;
     margin: 5px;
     background-color: rgba(139, 203, 139, 0.477);
-  }
-
-  /* texto de la subsection */
-  div#SubSection p{
-    margin: 10px 20px 15px 20px;
     display: flex;
   }
+
+
 
   /* Productos y servicios en dos columnas */
   #columnas {
@@ -187,6 +185,14 @@
     float: left;
     margin-right: 20px;
     margin-bottom: 30px;
+  }
+
+  /* imageb + texto */
+  iframe.logoAgroAbeja p {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
   }
 
   /* Solo Vídeo corporativo para tener margen en el lado izquierdo*/
@@ -255,8 +261,8 @@
       <h2 style="clear: both;">Sobre Nosostros</h2>
       <div id="SubSection">
         <br> <br>
-
-        <p><iframe class="logoAgroAbeja" src="https://github.com/user-attachments/assets/d8448106-5198-41ab-bd67-41048d9cc0a9"></iframe> 
+        <p><iframe class="logoAgroAbeja"
+            src="https://github.com/user-attachments/assets/d8448106-5198-41ab-bd67-41048d9cc0a9"></iframe>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolor
           sit quas qui. Ea voluptatibus nemo labore blanditiis aperiam expedita
           mollitia voluptates, pariatur vel amet culpa assumenda consequuntur
