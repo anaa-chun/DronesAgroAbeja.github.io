@@ -166,18 +166,33 @@
   }
 
 /* AgroAbeja video corporativo + textos en el lado izquierdo */
-/* Solo Vídeo corporativo para tener margen en el lado izquierdo*/
 iframe.logoAgroAbeja {
   float: left;
   margin-right: 20px;
   margin-bottom: 30px;
 }
 
+/* Solo Vídeo corporativo para tener margen en el lado izquierdo*/
 iframe {
   display: inline-block;
   margin-left: 22px;
 }
 </style>
+
+<script>
+  var MenuNavegacion = document.querySelectorAll("nav ul li a");
+
+  MenuNavegacion.forEach(link =>{
+    link.addEventListener("mouseover", ()=> {
+    link.style.color="yellow"})
+
+    link.addEventListener("mouseout", ()=> {
+    link.style.color=""})
+  
+  });
+
+
+</script>
 
 <body>
   <header>
@@ -187,7 +202,7 @@ iframe {
     <nav>
       <!-- NAV -->
       <ul>
-        <li><a href="#SobreNosostros">Sobre Nosostros</a></li>
+        <li><a href="#SobreNosotros">Sobre Nosotros</a></li>
         <!-- Introducción Breve: Un párrafo que explique qué es AgroAbeja y su enfoque en la tecnología agrícola.
           Imagen o Video Corporativo-->
 
@@ -211,7 +226,7 @@ iframe {
 
   <!-- MAIN -->
   <main>
-    <section id="#SobreNosostros"> <!-- SUBTITULO 1 -->
+    <section id="SobreNosotros"> <!-- SUBTITULO 1 -->
       <h2 style="clear: both;">Sobre Nosostros</h2>
       <div style="text-align:start; margin-top: 20px; padding: 0.4px; margin: 1px; background-color: rgb(198, 246, 218);">
         <br> <br>
