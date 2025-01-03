@@ -151,12 +151,17 @@
   }
 
   /* Subsection */
-  div {
-    text-align: start;
+  div#SubSection {
+    text-align:justify;
     margin-top: 20px;
     padding: 0.4px;
-    margin: 1px;
+    margin: 5px;
     background-color: rgb(198, 246, 218);
+  }
+
+  div#SubSection p{
+    margin: 10px 20px 15px 20px;
+    display: flex;
   }
 
   /* Productos y servicios en dos columnas */
@@ -246,13 +251,11 @@
   <main>
     <section id="SobreNosotros"> <!-- SUBTITULO 1 -->
       <h2 style="clear: both;">Sobre Nosostros</h2>
-      <div
-        style="text-align:start; margin-top: 20px; padding: 0.4px; margin: 1px; background-color: rgb(198, 246, 218);">
+      <div id="SubSection">
         <br> <br>
 
-        <p><iframe class="logoAgroAbeja"
-            src="https://github.com/user-attachments/assets/d8448106-5198-41ab-bd67-41048d9cc0a9"></iframe> Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Quam dolor
+        <p><iframe class="logoAgroAbeja" src="https://github.com/user-attachments/assets/d8448106-5198-41ab-bd67-41048d9cc0a9"></iframe> 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolor
           sit quas qui. Ea voluptatibus nemo labore blanditiis aperiam expedita
           mollitia voluptates, pariatur vel amet culpa assumenda consequuntur
           repellendus excepturi?
@@ -304,7 +307,7 @@
 
     <section id="Biografia"> <!-- SUBTÍTULO 3 -->
       <h2>Biografía</h2>
-      <div>
+      <div id="SubSection">
         <br> <br>
         <p> Lorem ipsum
           dolor sit amet consectetur adipisicing elit. Quam dolor
@@ -333,7 +336,7 @@
   </main>
   <section id="Contactos"> <!-- SUBTÍTULO 4 -->
     <h2>Contactos</h2>
-    <div style="text-align:start; margin-top: 20px; padding: 0.4px; margin: 1px; background-color: rgb(198, 246, 218);">
+    <div id="SubSection">
       <br> <br>
       <p> Lorem ipsum
         dolor sit amet consectetur adipisicing elit. Quam dolor
