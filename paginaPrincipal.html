@@ -7,23 +7,76 @@
   </head>
 
   <style>
-  
-    /*Encabezado header*/
+	
+    body{
+      position: relative;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+	  
+	     /* Responsividad */
+      /* media queries hace que las páginas se adapten a diferentes tamaños de pantalla y dispositivos */
+      @media (max-width: 768px) {
+        header {
+          text-align: center;
+          padding: 20px;
+        }
 
+        nav ul {
+          flex-direction: column;
+        }
+        nav ul li {
+          margin: 10px 0;
+        }
+   
+        #columnas {
+          flex-direction: column; /* Cambia a columnas verticales */
+        }
+      }
+
+      @media (max-width: 480px) {
+        header {
+          padding: 15px;
+        }
+
+        h1 {
+          font-size: 1.5rem; /* Tamaño del texto reducido */
+        }
+
+        section {
+          padding: 15px;
+        }
+
+        #c1,
+        #c2 {
+          padding: 15px;
+        }
+      }
+	  
+    /*Encabezado header*/
     header {
       color: white;
       background-color: green;
       padding: 33px 11px;
       text-align: center;
     }
+    
     h2 {
       color: #4caf50;
     }
-
-    nav ul li {
-      display: inline;
-      margin: 0 55px;
+    
+   nav ul {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
     }
+      
+    nav ul li {
+      margin: 0 55px;
+      position: relative;
+    }
+    
     nav ul li a {
       color: white;
 
@@ -73,8 +126,6 @@
       border-radius: 5px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
-
-    /**/
 
     /*Para footer*/
     footer {
@@ -126,7 +177,10 @@
           sit quas qui. Ea voluptatibus nemo labore blanditiis aperiam expedita
           mollitia voluptates, pariatur vel amet culpa assumenda consequuntur
           repellendus excepturi?
-
+          <div style="text-align: center; margin-top: 20px;">
+            <video src="https://github-production-user-asset-6210df.s3.amazonaws.com/143660513/399963046-42577574-0708-47e8-b84a-72f17672bda2.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250103%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250103T135054Z&X-Amz-Expires=300&X-Amz-Signature=c6ebec44658fb6dcd9652764ac269e7f22c095f92f2c08ff672134e1319364fa&X-Amz-SignedHeaders=host"  style="max-width: 50%; height: auto; display: inline-block;"></video>
+            <img src="image.jpg" alt="AgroAbeja" style="max-width: 100%; height: auto; display: inline-block;"/>
+          </div>
           <!-- se pone aquí el vídeo corporativo -->
         </p>
       </section>
@@ -168,7 +222,7 @@
       </section>
     </main>
     <section id="Contactos"><h2>Contactos</h2></section>
-    <img src="image.jpg" alt="AgroAbeja" />
+   
     <footer>
       <p>&copy; 2025 AgroAbeja. Todos los derechos reservados.</p>
     </footer>
