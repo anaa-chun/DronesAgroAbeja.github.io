@@ -14,9 +14,12 @@
     position: relative;
     background-color: #0d2c0d;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    max-width: 1200px;
+    max-width: 1211px;
     margin: 0 auto;
+    overflow-x: hidden;
+
   }
+
 
   /* ------------------------------------------------------------------------------------------ */
 
@@ -62,6 +65,11 @@
     #c2 {
       padding: 15px;
     }
+
+    div#textoVideoCorporativo {
+      font-size: 0.9rem;
+      padding: 0 15px;
+    }
   }
 
   /* Media query para dispositivos con pantallas pequeñas */
@@ -99,7 +107,8 @@
     color: #4caf50;
     text-align: center;
   }
-  h2 u{
+
+  h2 u {
     color: #4caf50;
     text-align: center;
     color: #006400;
@@ -153,7 +162,7 @@
   /* Secciones paneles verdes claros*/
   section {
     padding: 33px 10px;
-    margin: 10px 0;
+    margin: 11px 0;
     width: 100%;
     height: 100%;
     background: rgb(168, 232, 168);
@@ -164,9 +173,10 @@
   /* Subsecciones */
   div#SubSection {
     text-align: justify;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding: 15px;
-    margin: 5px;
+    /* margin: 5px; */
+    margin: 10px 33px 10px 33px;
     background-color: rgba(139, 203, 139, 0.477);
     display: flex;
   }
@@ -183,7 +193,8 @@
   /* Paneles blancos de productos y otro de servicios */
   #c1,
   #c2 {
-    padding: 22px;
+    padding: 55px;
+    margin: 10px 33px 10px 33px;
     background-color: aliceblue;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -241,7 +252,7 @@
         src="https://github.com/user-attachments/assets/5925149b-4ca3-4106-b8cb-81335e4fba9d" alt="logoAgroAbeja"
         width="82px" height="82px"></a>
     <nav>
-      <!-- NAV -->  
+      <!-- NAV -->
       <ul>
         <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
         <!-- Introducción Breve: Un párrafo que explique qué es AgroAbeja y su enfoque en la tecnología agrícola.
@@ -269,11 +280,15 @@
   <main>
     <section id="SobreNosotros"> <!-- SUBTITULO 1 -->
       <h2><u></u></h2>
-      <a href="SobreNosotros.html"><h2><u>Sobre Nosotros</u></h2></a>
+      <a href="SobreNosotros.html">
+        <h2><u>Sobre Nosotros</u></h2>
+      </a>
       <div id="SubSection">
         <br> <br>
-        <p><iframe class="logoAgroAbeja"
+        <p>
+          <iframe class="logoAgroAbeja"
             src="https://github.com/user-attachments/assets/d8448106-5198-41ab-bd67-41048d9cc0a9"></iframe>
+
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolor
           sit quas qui. Ea voluptatibus nemo labore blanditiis aperiam expedita
           mollitia voluptates, pariatur vel amet culpa assumenda consequuntur
@@ -307,8 +322,9 @@
     </section>
 
     <section id="Biografia"> <!-- SUBTÍTULO 3 -->
-      
-      <a href="biografia.html"><h2><u style="color: #006400;">Biografía</u></h2></a>
+      <a href="biografia.html">
+        <h2><u style="color: #006400;">Biografía</u></h2>
+      </a>
       <div id="SubSection">
         <br> <br>
         <p> Lorem ipsum
@@ -320,8 +336,12 @@
       </div>
     </section>
   </main>
-  <section id="Contactos"> <!-- SUBTÍTULO 4 -->    
-    <a href="contactos.html"><h2><u>Contactos</u></h2></a>
+
+
+  <section id="Contactos"> <!-- SUBTÍTULO 4 -->
+    <a href="contactos.html">
+      <h2><u>Contactos</u></h2>
+    </a>
     <div id="SubSection">
       <br> <br>
       <p> Lorem ipsum
