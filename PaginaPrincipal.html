@@ -106,11 +106,18 @@
     color: #4caf50;
     text-align: center;
   }
-
+  
+  /* Para súbtitulos (sobre nosotros, productos y servicios), biografia, contactos + subrayado*/
   h2 u {
     color: #4caf50;
     text-align: center;
     color: #006400;
+  }
+
+  /* texto encabezado productos, servicios en el subsection*/
+  h3 {
+    color: #006400;
+    text-align: center;
   }
 
   /* Para que no aparezca los puntos de indice */
@@ -282,7 +289,9 @@
   <!-- MAIN -->
   <main>
     <section id="SobreNosotros"> <!-- SUBTITULO 1 -->
-      <h2><u>Sobre Nosotros</u></h2>
+      <a href="SobreNosotros.html">
+        <h2><u>Sobre Nosotros</u></h2>
+      </a>
       <div id="SubSection">
         <br> <br>
         <p><iframe class="logoAgroAbeja"
@@ -291,7 +300,7 @@
           sit quas qui. Ea voluptatibus nemo labore blanditiis aperiam expedita
           mollitia voluptates, pariatur vel amet culpa assumenda consequuntur
           repellendus excepturi?. <br>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit temporibus 
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit temporibus
           placeat vero aspernatur. Similique quaerat sint veniam iure quas eaque eligendi illum
           asperiores incidunt dolorem. Ab ratione omnis est laudantium!
         </p>
@@ -300,10 +309,10 @@
 
 
     <section id="ProductosServicios"> <!-- SUBTÍTULO 2 -->
-      <h2><u>Productos y Servicios</u></h2>
+      <h2><u>Productos y Servicios</u></h2> <!-- sin vínculo -->
       <div id="columnas">
         <div id="c1">
-          <h3><a href="productos.html">Productos</a></h3>
+          <h3><a style="color: #006400;" href="productos.html">Productos</a></h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
             dolor sit quas qui. Ea voluptatibus nemo labore blanditiis aperiam
@@ -312,7 +321,7 @@
           </p>
         </div>
         <div id="c2">
-          <h3><a href="servicios.html">Servicios</a></h3>
+          <h3><a style="color: #006400;" href="servicios.html">Servicios</a></h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
             dolor sit quas qui. Ea voluptatibus nemo labore blanditiis aperiam
