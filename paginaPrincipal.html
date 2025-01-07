@@ -19,6 +19,7 @@
     overflow-x: hidden;
   }
 
+
   /* ------------------------------------------------------------------------------------------ */
 
   /* Responsividad */
@@ -63,6 +64,11 @@
     #c2 {
       padding: 15px;
     }
+
+    div#textoVideoCorporativo {
+      font-size: 0.9rem;
+      padding: 0 15px;
+    }
   }
 
   /* Media query para dispositivos con pantallas pequeñas */
@@ -88,8 +94,6 @@
     height: 100%;
   }
 
-
-
   /*Nombre del negocio: AgroAbeja */
   h1 {
     font-size: 2.5rem;
@@ -101,10 +105,17 @@
     text-align: center;
   }
 
+  /* Para súbtitulos (sobre nosotros, productos y servicios), biografia, contactos + subrayado*/
   h2 u {
     color: #4caf50;
     text-align: center;
     color: #006400;
+  }
+
+  /* texto encabezado productos, servicios en el subsection*/
+  h3 {
+    color: #006400;
+    text-align: center;
   }
 
   /* Para que no aparezca los puntos de indice */
@@ -155,7 +166,7 @@
   /* Secciones paneles verdes claros*/
   section {
     padding: 33px 10px;
-    margin: 10px 0;
+    margin: 11px 0;
     width: 100%;
     height: 100%;
     background: rgb(168, 232, 168);
@@ -163,18 +174,7 @@
     box-shadow: rgb(187, 168, 168);
   }
 
-  /* Subsecciones */
- /*  div#SubSection {
-    text-align: justify;
-    margin-top: 20px;
-    padding: 15px;
-    margin: 5px;
-    background-color: rgba(139, 203, 139, 0.477);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-  } */
-
-  /* SubSection sobre nosotros */
+  /* Subsecciones (Sobre nosotros, biografía, contactos)*/
   div#SubSection {
     text-align: justify;
     /* margin-top: 20px; */
@@ -187,8 +187,6 @@
     display: flex;
   }
 
-
-
   /* Productos y servicios en dos columnas */
   #columnas {
     display: flex;
@@ -199,33 +197,50 @@
   /* Paneles blancos de productos y otro de servicios */
   #c1,
   #c2 {
-    padding: 22px;
-    background-color: aliceblue;
+    padding: 55px;
+    margin: 10px 33px 10px 33px;
+    /* background-color: aliceblue; */
+    background-color: rgba(139, 203, 139, 0.477);
+    /* background-color: white; */
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
   }
 
   /* AgroAbeja video corporativo + textos en el lado izquierdo */
-  iframe.logoAgroAbeja {
+  /*  iframe.logoAgroAbeja {
     float: left;
     margin-right: 20px;
     margin-bottom: 30px;
+    text-align: center;
+  } */
+
+  /* AgroAbeja video corporativo en el centro */
+  iframe.logoAgroAbeja {
+    display: block;
+    /* Necesario para usar margin auto */
+    margin: 0 auto;
+    /* Centra horizontalmente */
+    margin-bottom: 20px;
+    /* Mantén el margen inferior */
+    width: 480px;
+    height: 380px;
   }
 
+
   /* imagen + texto */
-  iframe.logoAgroAbeja p {
+  /*  iframe.logoAgroAbeja p {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
 
-  }
+  } */
 
   /* Solo Vídeo corporativo para tener margen en el lado izquierdo*/
-  iframe {
+  /* iframe {
     display: inline-block;
     margin-left: 22px;
-  }
+  } */
 </style>
 
 <!-- Cambio de color al pasar el ratón y luego vuelve al color original -->
@@ -253,12 +268,15 @@
   <header>
     <!-- HEADER -->
     <h1> AgroAbeja</h1>
-    <a href="AgroAbeja.html"><img
-        src="https://github.com/user-attachments/assets/5925149b-4ca3-4106-b8cb-81335e4fba9d" alt="logoAgroAbeja"
-        width="82px" height="82px"></a>
+    <a href="AgroAbeja.html">
+      <!-- imagen logo AgroAbeja en el menu de navegación -->
+      <img src="https://github.com/user-attachments/assets/5925149b-4ca3-4106-b8cb-81335e4fba9d" alt="logoAgroAbeja" width="82px" height="82px"></a>
     <nav>
       <!-- NAV -->
       <ul>
+        <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+        <!-- Introducción Breve: Un párrafo que explique qué es AgroAbeja y su enfoque en la tecnología agrícola.
+          Imagen o Video Corporativo-->
 
         <!-- <li><a href="#ProductosServicios">Productos y Servicios</a></li> -->
         <li id="#ProductosServicios">
@@ -280,28 +298,81 @@
 
   <!-- MAIN -->
   <main>
-    <!-- Introducción Breve: Un párrafo que explique qué es AgroAbeja y su enfoque en la tecnología agrícola.
-          Imagen o Video Corporativo-->
-          <section id="SobreNosotros"> <!-- SUBTITULO 1 -->
-            <a href="SobreNosotros.html">
-              <h2><u>Sobre Nosotros</u></h2>
-            </a>
-            <div id="SubSection">
-              <br> <br>
-              <p><iframe class="logoAgroAbeja"
-                  src="https://github.com/user-attachments/assets/d8448106-5198-41ab-bd67-41048d9cc0a9"></iframe>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolor
-                sit quas qui. Ea voluptatibus nemo labore blanditiis aperiam expedita
-                mollitia voluptates, pariatur vel amet culpa assumenda consequuntur
-                repellendus excepturi?. <br>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit temporibus
-                placeat vero aspernatur. Similique quaerat sint veniam iure quas eaque eligendi illum
-                asperiores incidunt dolorem. Ab ratione omnis est laudantium!
-              </p>
-            </div>
-          </section>
+    <section id="SobreNosotros"> <!-- SUBTITULO 1 -->
+      <a href="SobreNosotros.html">
+        <h2><u>Sobre Nosotros</u></h2>
+      </a>
+      <div id="SubSection">
+        <br> <br>
+        <p>
+          <iframe class="logoAgroAbeja" src="https://github.com/user-attachments/assets/d8448106-5198-41ab-bd67-41048d9cc0a9"></iframe>
+          AgroAbeja es una empresa dedicada a la innovación y la sostenibilidad en la agricultura. Fundada por Erjie
+          Xia, Sebastian Cedano y Ana Chun Gómez, nos especializamos en el diseño, fabricación y comercialización de
+          drones agrícolas. Con sede en Granada, ofrecemos soluciones tecnológicas avanzadas que ayudan a los
+          agricultores a gestionar plagas de manera eficiente y ecológica. Nuestro objetivo es mejorar la
+          productividad agrícola mientras cuidamos de medio ambiente.
+        </p>
+      </div>
+    </section>
+
+
+    <section id="ProductosServicios"> <!-- SUBTÍTULO 2 -->
+      <h2><u>Productos y Servicios</u></h2> <!-- sin vínculo -->
+      <div id="columnas">
+        <div id="c1">
+          <h3><a style="color: #006400;" href="productos.html">Productos</a></h3>
+          <p> <img src="" alt=""> <!-- imagen 1 -->
+            Ofrecemos una innovadora gama de productos diseñados para transformar la agricultura moderna. Nuestros
+            drones, cargadores y equipos están desarrollados con tecnología avanzada para ayudar a los agricultores a
+            gestionar sus cultivos de manera más eficiente y sostenible. Cada producto está diseñado para satisfacer las
+            necesidades específicas del sector agrícola, asegurando calidad, durabilidad y un impacto positivo en el
+            medio ambiente.
+          </p>
+        </div>
+        <div id="c2">
+          <h3><a style="color: #006400;" href="servicios.html">Servicios</a></h3>
+          <p> <img src="" alt=""> <!-- imagen 2 -->
+            Nuestros servicios en AgroAbeja están orientados a proporcionar un soporte integral a los agricultores.
+            Desde suscripciones de mantenimiento y alquiler de drones hasta instalación y capacitación, nos aseguramos
+            de que nuestros clientes cuenten con las herramientas y el conocimiento necesarios para maximizar el
+            rendimiento de sus cultivos. Nuestro compromiso es acompañar a los agricultores en cada paso de su camino
+            hacia una agricultura más eficiente y sostenible.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="Biografia"> <!-- SUBTÍTULO 3 -->
+      <a href="biografia.html">
+        <h2><u>Biografía</u></h2>
+      </a>
+      <div id="SubSection">
+        <br> <br>
+        <p>
+          AgroAbeja fue fundada por un grupo de tres jóvenes apasionados por la tecnología y la agricultura sostenible.
+          En AgroAbeja, valoramos la colaboración y la investigación. Estamos constantemente buscando nuevas formas de
+          mejorar nuestros productos y servicios para atender las necesidades de nuestros clientes.
+        </p>
+      </div>
+    </section>
   </main>
 
+
+  <section id="Contactos"> <!-- SUBTÍTULO 4 -->
+    <a href="contactos.html">
+      <h2><u>Contactos</u></h2>
+    </a>
+    <div id="SubSection">
+      <br> <br>
+      <p>
+        Estamos aquí para ayudarte. Si tienes preguntas sobre nuestros productos o servicios, o si deseas más
+        información sobre como AgroAbeja puede mejorar la gestión de tus cultivos, no dudes en ponerte en contacto con
+        nosotros. Puedes llamarnos al 123456789 o enviarnos un correo electrónico a AgroAbeja@info.es También puedes
+        visitarnos en nuestra sede en el Centro Comercial Neptuno, Calle Arabial 45, Granada. ¡Esperamos saber de ti
+        pronto!
+      </p>
+    </div>
+  </section>
 
   <footer>
     <p>&copy; 2025 AgroAbeja. Todos los derechos reservados.</p>
