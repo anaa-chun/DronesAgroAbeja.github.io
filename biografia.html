@@ -85,27 +85,35 @@
     height: 100%;
   }
 
-   /* Imagen logo AgroAbeja */
-   img.logoAgroAbeja{
+  /* Imagen logo AgroAbeja */
+  img.logoAgroAbeja {
     width: 130px;
     height: auto;
   }
 
-  /*Nombre del negocio: AgroAbeja */
   h1 {
+    color: #006400;
+    text-align: center;
     font-size: 2.5rem;
   }
 
-  /* Para súbtitulos (sobre nosotros, productos y servicios), biografia, contactos*/
+
+  /* Para súbtitulos (por que agroabeja...)*/
   h2 {
-    color: #4caf50;
-    text-align: center;
+    text-align: start;
+    color: #006400;
+    text-align: center
   }
 
-  h2 {
-    color: #4caf50;
+  article {
+    /* color: #4caf50; */
     text-align: center;
     color: #006400;
+  }
+
+  p {
+    text-align: justify;
+    color: black;
   }
 
   /* Para que no aparezca los puntos de indice */
@@ -182,12 +190,13 @@
 <body>
   <header>
     <!-- HEADER -->
-    
+
     <a href="AgroAbeja.html">
       <!-- imagen logo AgroAbeja en el menu de navegación -->
-      <img src="https://github.com/user-attachments/assets/5925149b-4ca3-4106-b8cb-81335e4fba9d" alt="logoAgroAbeja" class="logoAgroAbeja">
+      <img src="https://github.com/user-attachments/assets/5925149b-4ca3-4106-b8cb-81335e4fba9d" alt="logoAgroAbeja"
+        class="logoAgroAbeja">
     </a>
-    
+
     <nav>
       <!-- NAV -->
       <ul>
@@ -210,20 +219,62 @@
   <!-- MAIN -->
   <main>
     <section id="biografía">
-      <h2>Biografia</a></h2>
+      <h1>Biografía</h1>
+
       <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-          dolor sit quas qui. Ea voluptatibus nemo labore blanditiis aperiam
-          expedita mollitia voluptates, pariatur vel amet culpa assumenda
-          consequuntur repellendus excepturi?
-        </p>
+        <article>
+          <h2 style="text-align: start;">¿Por qué AgroAbeja?</h2>
+          <p>
+            Desarrollamos drones en forma de abeja para la agricultura. Tomamos la raíz 'agros' (que significa
+            agricultura) y le añadimos la palabra 'abeja'. Decidimos que el nombre sea en español, ya que estamos
+            ubicados en Granada.
+
+            <!-- Desarrollae más -->
+          </p>
+
+          <br>
+
+          <h2 style="text-align: start;">Valores</h2>
+          <ul>
+            <li><b>Compromiso con la sostenibilidad: </b>Creemos que el éxito empresarial va de la mano de la
+              responsabilidad ambiental. Nos esforzamos por crear un impacto positivo en el planeta, ¿cómo?, utilizando
+              prácticas sostenibles en todos nuestros procesos. </li> <br>
+            <li><b>Innovación:</b> Buscamos constantemente soluciones innovadoras para mejorar la eficiencia y la
+              productividad de la apicultura. Nuestro equipo de expertos se dedica a desarrollar nuevas tecnologías que
+              impulsen el crecimiento del sector.</li>  <br>
+            <li><b>Trabajo en equipo:</b> Creemos que el trabajo en equipo es importante para lograr nuestros objetivos.
+              Valoramos la colaboración, el respeto y la comunicación abierta entre todos los miembros de AgroAbeja.</li>  <br>
+            <li><b>Calidad:</b> Nos comprometemos a ofrecer productos de la más alta calidad.</li>
+          </ul>
+       
+
+          <style>
+            ul,
+            li {
+              text-align: justify;
+              color: black;
+            }
+          </style>
+
+          <br>
+          <h2 style="text-align: start;">Miembros del equipo</h2>
+          <ul>
+            <li><b>Erjie Xia (Estratega de desarrollo de proyectos):</b> Una mente estratégica con experiencia en
+              desarrollo de proyectos que impulsa la innovación y la expansión de AgroAbeja.</li>  <br>
+            <li><b>Sebas (Diseñador & Responsable comercial):</b> Un talentoso diseñador y responsable comercial que
+              conecta con la gente y da forma a la imagen y comunicación de AgroAbeja.</li>  <br>
+            <li><b>Ana (Especialista en tecnología):</b> Una experta en tecnología que que desarrolla soluciones
+              innovadoras para mejorar los procesos de producción y asegurar la calidad de nuestros productos.</li>  <br>
+          </ul>
+        
+        </article>
       </div>
     </section>
+
   </main>
 
   <footer>
-    <p>&copy; 2025 AgroAbeja. Todos los derechos reservados.</p>
+    <p style="text-align: center; color: white;">&copy; 2025 AgroAbeja. Todos los derechos reservados.</p>
   </footer>
 </body>
 
