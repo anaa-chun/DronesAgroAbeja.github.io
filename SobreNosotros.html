@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AgroAbeja Sobre Nosotros</title>
+  <script src="Funcionamiento.js"></script>
   <link rel="icon" href="https://github.com/user-attachments/assets/5925149b-4ca3-4106-b8cb-81335e4fba9d">
 </head>
 
@@ -88,7 +89,11 @@
     height: 100%;
   }
 
-
+   /* Imagen logo AgroAbeja */
+   img.logoAgroAbeja{
+    width: 130px;
+    height: auto;
+  }
 
   /*Nombre del negocio: AgroAbeja */
   h1 {
@@ -228,34 +233,13 @@
   }
 </style>
 
-<!-- Cambio de color al pasar el ratón y luego vuelve al color original -->
-<script>
-
-  window.addEventListener("load", () => {
-    var MenuNavegacion = document.querySelectorAll("nav ul li a");
-
-    MenuNavegacion.forEach(link => {
-      link.addEventListener("mouseover", () => {
-        link.style.color = "yellow";
-      });
-
-      link.addEventListener("mouseout", () => {
-        link.style.color = "";
-      });
-
-    });
-  });
-
-</script>
-
 
 <body>
   <header>
     <!-- HEADER -->
-    <h1> AgroAbeja</h1>
-    <a href="AgroAbeja.html"><img
-        src="https://github.com/user-attachments/assets/5925149b-4ca3-4106-b8cb-81335e4fba9d" alt="logoAgroAbeja"
-        width="82px" height="82px"></a>
+    <a href="AgroAbeja.html">
+      <!-- imagen logo AgroAbeja en el menu de navegación -->
+      <img src="https://github.com/user-attachments/assets/5925149b-4ca3-4106-b8cb-81335e4fba9d" alt="logoAgroAbeja" class="logoAgroAbeja"></a>
     <nav>
       <!-- NAV -->
       <ul>
