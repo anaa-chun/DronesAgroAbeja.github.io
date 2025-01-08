@@ -211,19 +211,28 @@
 
   }
 
-  /* AgroAbeja video corporativo + textos en el lado izquierdo */
-  iframe.logoAgroAbeja {
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 30px;
+  /* imagen AgroAbeja texto sobre nosotros*/
+  img.ImagenAgroAbeja {
+    display: block;
+    margin: 0 auto;
+    /* Centrado horizontal */
+    margin-bottom: 20px;
+    width: 480px;
+    height: 380px;
   }
 
-  /* imagen + texto */
-  iframe.logoAgroAbeja p {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+  @media (max-width: 768px) {
+    img.ImagenAgroAbeja {
+      width: 350px;
+      height: 280px;
+    }
+  }
 
+  @media (max-width: 480px) {
+    img.ImagenAgroAbeja {
+      width: 280px;
+      height: 210px;
+    }
   }
 
   /* Solo Vídeo corporativo para tener margen en el lado izquierdo*/
@@ -266,21 +275,20 @@
   <main>
     <!-- Introducción Breve: Un párrafo que explique qué es AgroAbeja y su enfoque en la tecnología agrícola.
           Imagen o Video Corporativo-->
-          <section id="SobreNosotros"> <!-- SUBTITULO 1 -->
+          <section id="SobreNosotros"> <!-- SUBTÍTULO 1 -->
             <a href="SobreNosotros.html">
               <h2><u>Sobre Nosotros</u></h2>
             </a>
             <div id="SubSection">
               <br> <br>
-              <p><iframe class="logoAgroAbeja"
-                  src="https://github.com/user-attachments/assets/d8448106-5198-41ab-bd67-41048d9cc0a9"></iframe>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolor
-                sit quas qui. Ea voluptatibus nemo labore blanditiis aperiam expedita
-                mollitia voluptates, pariatur vel amet culpa assumenda consequuntur
-                repellendus excepturi?. <br>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit temporibus
-                placeat vero aspernatur. Similique quaerat sint veniam iure quas eaque eligendi illum
-                asperiores incidunt dolorem. Ab ratione omnis est laudantium!
+              <p>
+                <img class="ImagenAgroAbeja"
+                  src=""/>
+                AgroAbeja es una empresa dedicada a la innovación y la sostenibilidad en la agricultura. Fundada por Erjie
+                Xia, Sebastian Cedano y Ana Chun Gómez, nos especializamos en el diseño, fabricación y comercialización de
+                drones agrícolas. Con sede en Granada, ofrecemos soluciones tecnológicas avanzadas que ayudan a los
+                agricultores a gestionar plagas de manera eficiente y ecológica. Nuestro objetivo es mejorar la
+                productividad agrícola mientras cuidamos de medio ambiente.
               </p>
             </div>
           </section>
